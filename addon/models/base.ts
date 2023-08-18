@@ -1,6 +1,6 @@
 import Model, { attr, belongsTo, AsyncBelongsTo } from '@ember-data/model';
 
-import UserModel from './user';
+import UserModel from '@opendatafit/ember-models/models/user';
 
 export default class BaseModel extends Model {
   @attr('string') declare name: string;

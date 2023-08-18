@@ -1,5 +1,5 @@
 import Model, { attr } from '@ember-data/model';
-import Base from './base';
+import Base from '@opendatafit/ember-models/models/base';
 
 import { GenericView } from '@opendatafit/types';
 
