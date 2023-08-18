@@ -12,8 +12,8 @@ import ViewModel from '@opendatafit/ember-models/models/view';
 import DisplayModel from '@opendatafit/ember-models/models/display';
 
 export default class DatapackageModel extends Base {
-  @hasMany('resource') declare resources: AsyncHasMany<ResourceModel>;
-  @hasMany('algorithm') declare algorithms: AsyncHasMany<AlgorithmModel>;
-  @hasMany('view') declare views: AsyncHasMany<ViewModel>;
-  @hasMany('display') declare displays: AsyncHasMany<DisplayModel>;
+  @hasMany('resource', { async: true }) declare resources: AsyncHasMany<ResourceModel>;
+  @hasMany('algorithm', { async: true }) declare algorithms: AsyncHasMany<AlgorithmModel>;
+  @hasMany('view', { async: true }) declare views: AsyncHasMany<ViewModel>;
+  @hasMany('display', { async: true }) declare displays: AsyncHasMany<DisplayModel>;
 }
