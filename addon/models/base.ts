@@ -10,5 +10,6 @@ export default class BaseModel extends Model {
   @attr('string') declare viewPermission: string;
   @attr('number') declare lastUpdated: number;
 
-  @belongsTo('user') declare owner: AsyncBelongsTo<UserModel>;
+  @belongsTo('user', { async: true, inverse: null} ) 
+      declare owner: AsyncBelongsTo<UserModel>;
 }
