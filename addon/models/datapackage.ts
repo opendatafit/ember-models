@@ -13,15 +13,15 @@ import DisplayModel from '@opendatafit/ember-models/models/display';
 
 export default class DatapackageModel extends Base {
   @hasMany('resource', 
-      { async: true, inverse: null }) 
+      { async: false, inverse: null }) 
       declare resources: AsyncHasMany<ResourceModel>;
   @hasMany('algorithm', 
-      { async: true, inverse: null }) 
+      { async: false, inverse: null }) 
       declare algorithms: AsyncHasMany<AlgorithmModel>;
   @hasMany('view', 
-      { async: true, inverse: null }) 
+      { async: false, inverse: null }) 
       declare views: AsyncHasMany<ViewModel>;
   @hasMany('display', 
-      { async: true, inverse: null }) 
+      { async: false, inverse: null }) 
       declare displays: AsyncHasMany<DisplayModel>;
 }
