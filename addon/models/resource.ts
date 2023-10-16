@@ -7,5 +7,6 @@ export default class ResourceModel extends Base {
   @attr('string') declare format: Resource['format'];
 
   @attr() declare data: Resource['data'];
+  @attr() declare metadata: Resource['metadata'];
   @attr() declare schema: Resource['schema'];
 }
