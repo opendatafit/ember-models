@@ -1547,7 +1547,7 @@
 
 "@opendatafit/types@git+ssh://git@github.com:opendatafit/types.git":
   version "0.0.1"
-  resolved "git+ssh://git@github.com:opendatafit/types.git#e18d60fb9e5fd9d7f8c5f56a0e96332b556c16fc"
+  resolved "git+ssh://git@github.com:opendatafit/types.git#32724d74f707bc212b17f7d5aa5e4aec6d489a84"
 
 "@simple-dom/interface@^1.4.0":
   version "1.4.0"
