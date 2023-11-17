@@ -2,8 +2,10 @@ import Model, {
   attr,
   hasMany,
   belongsTo,
-  AsyncHasMany,
 } from '@ember-data/model';
+
+import type { AsyncHasMany } from '@ember-data/model'; 
+
 import Base from '@opendatafit/ember-models/models/base';
 
 import AlgorithmModel from '@opendatafit/ember-models/models/algorithm';
